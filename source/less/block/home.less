@@ -1,0 +1,69 @@
+.home {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media @mobile {
+
+  }
+
+  @media @tablet-interval {
+
+  }
+
+  @media @desktop {
+
+  }
+
+  @media @desktop-min {
+    background-image: url("../build/img/main-image-desktop.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../build/img/main-image-desktop-2x.jpg");
+    }
+  }
+
+  & h1 {
+    padding: 0;
+    margin: 94px 0 30px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 120%;
+  }
+
+  &__accent-text {
+    padding: 0;
+    margin: 0 -24px 60px;
+    font-size: 28px;
+    color: @accent;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0 -24px 60px;
+    font-size: 24px;
+
+    &_accent {
+      color: @accent;
+    }
+  }
+
+  &__button {
+    padding: 9px 36px;
+    border: none;
+    border-radius: 30px;
+    margin: 0 -24px 82px;
+    font-weight: 700;
+    line-height: 22px;
+    color: @white;
+    background-color: @primary-button;
+  }
+  &__advantage-item {
+    padding: 20px 25px 20px 112px;
+    border-radius: 20px;
+    background-color: @accent-background;
+  }
+
+  &__advantage-accent {
+    font-size: 24px;
+    color: @accent;
+  }
+}

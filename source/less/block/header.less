@@ -1,0 +1,120 @@
+.header {
+  &__container {
+    max-width: 1366px;
+    padding-bottom: 13px;
+  }
+
+  &__logo {
+    display: flex;
+    padding: 0;
+  }
+
+  &__logo-image {
+    @media @mobile {
+      width: 72px;
+      height: 72px;
+    }
+
+    @media @tablet-interval {
+      width: 72px;
+      height: 72px;
+    }
+
+    @media @desktop {
+      width: 72px;
+      height: 72px;
+    }
+
+    @media @desktop-min {
+      width: 96px;
+      height: 96px;
+    }
+  }
+
+  &__logo-text {
+    width: 200px;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: @accent;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  &__list-element {
+    width: 244px;
+    margin-right: 32px;
+  }
+
+  &__list-accent-text {
+    position: relative;
+    padding-left: 30px;
+    font-weight: 400;
+    line-height: 22px;
+    color: @accent;
+  }
+
+  &__list-accent-text_address {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 22px;
+      background-image: url("../img/icon/header-map-pin.svg");
+    }
+  }
+
+  &__list-accent-text_clock {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/icon/header-clock.svg");
+    }
+  }
+
+  &__list-text {
+    margin: 10px 0;
+  }
+
+  &__call {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__phone-list {
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  &__phone-link {
+    font-weight: 400;
+    font-size: 20px;
+    color: @text-main-color;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: @accent;
+    background-color: transparent;
+  }
+}
