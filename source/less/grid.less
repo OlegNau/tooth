@@ -3,9 +3,9 @@
 
 @tablet-interval: ~"(min-width: 768px) and (max-width: 1023px)";
 
-@desktop: ~"(min-width: 1024px) and (max-width: 1365px)";
+@desktop: ~"(min-width: 1024px) and (max-width: 1289px)";
 
-@desktop-min: ~"screen and (min-width: 1366px)";
+@desktop-min: ~"screen and (min-width: 1290px)";
 
 .box {
   height: 50px;
@@ -26,13 +26,13 @@
   }
 
   @media @desktop {
-    width: 1000px;
+    max-width: 1024px;
     padding: 0 16px;
   }
 
   @media @desktop-min {
-    width: 1366px;
-    padding: 0 24px;
+    max-width: 1290px;
+    padding: 0 16px;
   }
 }
 
@@ -87,8 +87,8 @@
   }
 
   @media @desktop-min {
-    margin-left: -24px;
-    margin-right: -24px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
@@ -106,7 +106,7 @@
   }
 
   @media @desktop-min {
-    .generate-columns(lg, 12, 24px);
+    .generate-columns(lg, 12, 16px);
   }
 }
 
