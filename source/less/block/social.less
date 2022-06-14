@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding: 0;
+
+  @media @desktop {
+    margin-top: 15px;
+  }
+
+  @media @desktop-min {
+    margin-top: 36px;
+  }
+
+  &__element {
+    @media @desktop {
+      margin-left: 20px;
+    }
+
+    @media @desktop-min {
+      margin-left: 9px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: @text-main-color;
+  }
+}
